@@ -13,6 +13,11 @@ export default function Home() {
 					Es un e-commerce básico, que utiliza una api para obtener resultados sobre los productos.
 				</p>
 
+				<p className="descriptionSize">
+					<b className="text-red-500">Atención:</b> La API que se usa en esta aplicación a veces es
+					un poco lerda, por lo que pido paciencia.
+				</p>
+
 				<Link href="/products">
 					<a className="descriptionSize font-bold underline decoration-2 underline-offset-2 text-right w-full px-4">
 						Ver Productos

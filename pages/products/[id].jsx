@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Head from "next/head";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Loader from "../../components/Loader";
@@ -37,6 +38,9 @@ const ProductItem = () => {
 		<>
 			{id.length !== 0 ? (
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-y-2 gap-x-4 mx-auto py-2 px-8 md:w-10/12 xl:w-9/12 h-full max-w-5xl">
+					<Head>
+						<title>Product {data.id}</title>
+					</Head>
 					<Image
 						src={data?.image || notFound}
 						alt="Image"
@@ -76,6 +80,9 @@ const ProductItem = () => {
 				</div>
 			) : (
 				<div className="flex flex-col gap-10 justify-center mx-auto py-2 px-8 md:w-10/12 xl:w-9/12 h-full max-w-5xl">
+					<Head>
+						<title>Error Page</title>
+					</Head>
 					<Error />
 					<Link href="/products">
 						<a

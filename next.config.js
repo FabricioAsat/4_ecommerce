@@ -1,7 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-}
+	reactStrictMode: true,
+	env: { BASE_URL: process.env.BASE_URL },
+	swcMinify: true,
+	images: {
+		domains: ["fakestoreapi.com"],
+	},
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

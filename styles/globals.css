@@ -1,16 +1,32 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@layer components {
+	.descriptionSize {
+		@apply text-sm sm:text-sm md:text-base lg:text-lg xl:text-lg 2xl:text-xl italic;
+	}
 
-* {
-  box-sizing: border-box;
+	.subtitleSize {
+		@apply text-base sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-2xl font-bold;
+	}
+
+	.titleSize {
+		@apply text-xl sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-3xl font-bold;
+	}
+
+	.bigtitleSize {
+		@apply text-2xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-4xl;
+	}
+
+	.logoSize {
+		@apply text-xl lg:text-2xl;
+	}
+
+	.ligthButton {
+		@apply descriptionSize px-3 pt-2 pb-1 font-bold rounded-lg border-b-2 lg:border-b-4 lg:px-4 border-gray-400 active:text-green-400 active:scale-105;
+	}
+	.darkButton {
+		@apply descriptionSize px-3 pt-2 pb-1 font-bold rounded-lg border-b-2 lg:border-b-4 lg:px-4 border-black active:text-green-600 active:scale-105;
+	}
 }

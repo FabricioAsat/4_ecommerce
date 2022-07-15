@@ -1,12 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import { useIsDark } from "../context/darkContext";
-import { useTypeOfView } from "../context/mobileContext";
-import { useFetch } from "../hooks/useFetch";
-
 export default function Home() {
-	const typeOfView = useTypeOfView();
-
 	return (
 		<div className={`w-full h-full`}>
 			<Head>

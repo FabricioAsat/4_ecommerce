@@ -13,7 +13,7 @@ const CartModal = () => {
 		<>
 			{propsAboutCart.isOpen && (
 				<div
-					className={`fixed top-14 right-0 w-full h-full md:max-w-md md:top-16 md:border-l-2 overflow-y-auto ${
+					className={`fixed top-14 right-0 w-full h-[calc(100%-3.5rem)] md:max-w-md md:top-16 md:border-l-2 overflow-y-auto ${
 						isDark ? "bg-dark-bg/90 border-gray-600" : "bg-light-bg/90 border-gray-900"
 					}`}>
 					<div className="absolute mt-2 flex justify-between items-center w-full px-6">

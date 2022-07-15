@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Head from "next/head";
 import { useIsDark } from "../../context/darkContext";
-import { useTypeOfView } from "../../context/mobileContext";
 import { useFetch } from "../../hooks/useFetch";
 import CardsContainer from "../../components/CardsContainer/CardsContainer";
 
